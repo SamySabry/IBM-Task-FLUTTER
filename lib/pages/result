@@ -1,0 +1,31 @@
+// TODO Implement this library.
+import 'package:flutter/material.dart';
+
+class MyResultPage extends StatefulWidget {
+  @override
+  _MyResultPageState createState() => _MyResultPageState();
+}
+
+class _MyResultPageState extends State<MyResultPage> {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Result',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text("RESULT"),
+            ),
+            backgroundColor: Colors.green,
+            body: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                ]
+            )
+        )
+    );
+  }
+}
