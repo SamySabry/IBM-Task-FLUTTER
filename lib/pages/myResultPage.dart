@@ -25,7 +25,7 @@ class _MyResultPageState extends State<MyResultPage> {
 
               title: Text("RESULT"),
             ),
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.black,
             body:
             Column(
 
@@ -33,17 +33,20 @@ class _MyResultPageState extends State<MyResultPage> {
                 children: <Widget>[
                   Text('normal',style: TextStyle(fontSize: 40,color: Colors.white),)
                   ,
-                  Container(
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
 
-                    color: Colors.grey,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      color: Colors.grey,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
 
-                      children: <Widget>[
-                        Text(person.calculate().toInt().toString(),style: TextStyle(fontSize: 40,color: Colors.white),),
-                        Center(child: Text('you are crazy man go to hell',style: TextStyle(fontSize: 40,color: Colors.white),))
+                        children: <Widget>[
+                          Text(person.calculate().toInt().toString(),style: TextStyle(fontSize: 40,color: Colors.white),),
+                          Center(child: Text('you are crazy man go to hell',style: TextStyle(fontSize: 40,color: Colors.white),))
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Container(
